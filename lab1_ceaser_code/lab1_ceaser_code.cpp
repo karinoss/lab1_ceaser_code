@@ -99,6 +99,13 @@ int main() {
 			int key = 0;
 			cout << "Enter key for Ceasar's code: ";
 			cin >> key;
+			while (key < 1 || key > 25) {
+				cin.clear();
+				cin.ignore();
+				cout << "Error! You entered an invalid key. " << endl;
+				cout << "Enter key for Ceasar's code from 1 to 25: ";
+				cin >> key;
+			}
 			cin.ignore();
 			cout << "Enter your code: ";
 			cin.getline(code, SIZE);
