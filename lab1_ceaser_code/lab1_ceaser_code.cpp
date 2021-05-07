@@ -89,7 +89,7 @@ int main() {
 			cin.ignore();
 			cout << "Enter your message: ";
 			cin.getline(message, SIZE);
-			encoderCeaser(5, message, code);
+			encoderCeaser(key, message, code);
 			cout << "Your encoded massege: " << code << endl;
 			break;
 		}
@@ -109,7 +109,7 @@ int main() {
 			cin.ignore();
 			cout << "Enter your code: ";
 			cin.getline(code, SIZE);
-			decoderCeaser(5, code, message);
+			decoderCeaser(key, code, message);
 			cout << "Your decoded massege: " << message << endl;
 			break;
 		}
